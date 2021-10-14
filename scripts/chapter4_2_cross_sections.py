@@ -38,7 +38,8 @@ for isotope, isotope_data in thesis.isotopes.ISOTOPES.items():
             production_data = production_data[process]["children"][isotope]
             if ("cross_sections" in production_data):
                 cross_sections = production_data["cross_sections"]
-                for library, filename in cross_sections.items():                     if (filename is None):
+                for library, filename in cross_sections.items():
+                    if (filename is None):
                         continue
                     else:
                         if (library == "ENDF/B-VII.1"):
