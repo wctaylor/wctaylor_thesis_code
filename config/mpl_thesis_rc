@@ -1,0 +1,21 @@
+# Configure matplotlib to match LaTeX font style
+
+backend:            pgf  # use system latex and the pgf graphics package
+
+pgf.rcfonts:        false  # set fonts in matplotlib_header.tex, not here
+pgf.texsystem:      lualatex # supported: pdflatex, xelatex, lualatex
+pgf.preamble:       \input{mpl_thesis_settings.tex} # input the TeX settings
+
+text.usetex:        true
+
+font.family:        serif
+font.size:          12
+
+# \the\textwidth in Overleaf thesis document returned
+# 433.62pt
+# TeX used 72.27 pts/in --> textwidth = 6 in
+figure.figsize:     6, 6  # size in inch
+legend.fontsize:    12
+xtick.labelsize:    9
+ytick.labelsize:    9
+

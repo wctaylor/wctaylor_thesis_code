@@ -1,0 +1,7 @@
+{
+    "THESIS_ROOT": "/users/wctaylor/wctaylor_thesis_code",
+    "LATEX_PATH": "/users/wctaylor/.local/texlive/bin/x86_64-linux",
+    "CROSS_SECTION_DATA_DIR": "/users/wctaylor/data/cross_sections",
+    "SPECTRUM_DATA_DIR":  "/users/wctaylor/data/baccarat/wctaylor-5.2.7/XeBox/",
+    "FIGURE_DIR": "/users/wctaylor/wctaylor_thesis_code/figures"
+}
