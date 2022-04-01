@@ -13,11 +13,11 @@ if (use_tex):
     thesis.config.use_tex()
 else:
     thesis.config.use_inline()
-config_file_path = "/users/wctaylor/wctaylor_thesis_code/config/config.json"
+config_file_path = "/users/wctaylor/wctaylor_thesis_code/config/example_config.json"
 thesis.config.config_env(config_file_path)
 
 figure_dir = os.environ["FIGURE_DIR"]
-figure_dir = f"{figure_dir}/chapter4/cross_sections"
+figure_dir = f"{figure_dir}/activation/cross_sections"
 cross_section_dir = os.environ["CROSS_SECTION_DATA_DIR"]
 NUM_BINS = 70
 NUM_INTERPOLATION_BINS=1000*NUM_BINS
@@ -105,8 +105,9 @@ for isotope, isotope_data in thesis.isotopes.ISOTOPES.items():
         axis.yaxis.set_major_locator(matplotlib.ticker.LogLocator(numticks=9))
         axis.yaxis.set_minor_locator(matplotlib.ticker.LogLocator(subs='all', 
                                                                   numticks=90))
+        print(f" Saving to {figure_dir}/{isotope}_production.pdf")
         fig.savefig(f"{figure_dir}/{isotope}_production.pdf",
-                    dpi=150)
+                    dpi=450)
         plt.show()
     else:
         plt.close(fig)
