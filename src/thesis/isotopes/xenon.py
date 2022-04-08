@@ -1,5 +1,3 @@
-import numpy as np
-
 ISOTOPES = \
 {
     "Xe124": \
@@ -92,7 +90,7 @@ ISOTOPES = \
                     {
                         "half_life_days": 16.9/24,
                         "mode": "EC",
-                        "spectrum": None,
+                        "spectrum": "xebox_50k_xe125_decay_1869635645_flat.root",
                     },
                 },
             },
@@ -180,7 +178,7 @@ ISOTOPES = \
                     {
                         "half_life_days": 36.4,
                         "mode": "EC",
-                        "spectrum": None,
+                        "spectrum": "xebox_50k_xe127_decay_1951485865_flat.root",
                     },
                 },
             },
@@ -440,7 +438,7 @@ ISOTOPES = \
                     {
                         "half_life_days": 11.84,
                         "mode": "IT",
-                        "spectrum": None,
+                        "spectrum": "xebox_50k_xe131m_decay_1437918812_flat.root",
                     },
                 },
             },
@@ -544,7 +542,29 @@ ISOTOPES = \
                     {
                         "half_life_days": 5.243,
                         "mode": "$\beta^{-}$",
-                        "spectrum": None,
+                        "spectrum": "xebox_50k_xe133_decay_1313591320_flat.root",
+                    },
+                },
+            },
+            "neutronInelastic": \
+            {
+                "children": \
+                {
+                    "Xe133": \
+                    {
+                        "cross_sections": \
+                        {
+                            "ENDF/B-VII.1": "xe133_inelastic.txt",
+                            "NGATLAS": None,
+                        },
+                    },
+                    "Xe133m": \
+                    {
+                        "cross_sections": \
+                        {
+                            "ENDF/B-VII.1": "xe133_inelastic.txt",
+                            "NGATLAS": None,
+                        },
                     },
                 },
             },
@@ -553,7 +573,11 @@ ISOTOPES = \
     "Xe133m": \
     {
         "label": "$^{133m}$Xe",
-        "parents": [{"Xe132": "nCapture"}],
+        "parents": \
+        [
+            {"Xe132": "nCapture"}
+            {"Xe133": "neutronInelastic"},
+        ],
         "processes": \
         {
             "RadioactiveDecay": \
@@ -660,7 +684,7 @@ ISOTOPES = \
                     {
                         "half_life_days": 9.14/24,
                         "mode": "$\beta^{-}$",
-                        "spectrum": None,
+                        "spectrum": "xebox_50k_xe135_decay_1629266226_flat.root",
                     },
                 },
             },
@@ -736,7 +760,7 @@ ISOTOPES = \
                     {
                         "half_life_days": 3.818/60/24,
                         "mode": "$\beta^{-}$",
-                        "spectrum": None,
+                        "spectrum": "xebox_50k_xe137_decay_264330945_flat.root",
                     },
                 },
             },

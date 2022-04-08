@@ -16,7 +16,7 @@ ISOTOPES = \
                     {
                         "half_life_days": 59.408,
                         "mode": "EC",
-                        "spectrum": None,
+                        "spectrum": "xebox_50k_i125_decay_192105495_flat.root",
                     },
                 },
             },

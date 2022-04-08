@@ -2,6 +2,7 @@ import os
 
 from . import xenon
 from . import iodine
+from . import cesium
 from .. import config
 
 config.config_env()
@@ -13,4 +14,6 @@ ISOTOPES = {}
 for isotope, data in xenon.ISOTOPES.items():
     ISOTOPES.update({isotope:data})
 for isotope, data in iodine.ISOTOPES.items():
+    ISOTOPES.update({isotope:data})
+for isotope, data in cesium.ISOTOPES.items():
     ISOTOPES.update({isotope:data})
