@@ -22,4 +22,10 @@ ISOTOPES = \
             },
         },
     },
+    "I127": \
+    {
+        "label": "$^{127}$I",
+        "parents": [{"Xe127": "RadioactiveDecay"}],
+        "processes": {},
+    },
 }

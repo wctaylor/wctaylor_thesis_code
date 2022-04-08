@@ -1,5 +1,11 @@
 ISOTOPES = \
 {
+    "Cs133": \
+    {
+        "label": "$^{133}$Cs",
+        "parents": [{"Xe133": "RadioactiveDecay"}],
+        "processes": {},
+    },
     "Cs135": \
     {
         "label": "$^{135}$Cs",

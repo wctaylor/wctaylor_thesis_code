@@ -314,7 +314,7 @@ ISOTOPES = \
                     {
                         "half_life_days": 8.88,
                         "mode": "IT",
-                        "spectrum": None,
+                        "spectrum": "xebox_50k_xe129m_decay_1384900650_flat.root",
                     },
                 },
             },
@@ -575,7 +575,7 @@ ISOTOPES = \
         "label": "$^{133m}$Xe",
         "parents": \
         [
-            {"Xe132": "nCapture"}
+            {"Xe132": "nCapture"},
             {"Xe133": "neutronInelastic"},
         ],
         "processes": \
